@@ -27,7 +27,7 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    if ($("input #burger_name_input") == "") {
+    if ($("input #burger_name_input.val") == "") {
       alert("Please fill in a Burger Name");
     } else {
 
