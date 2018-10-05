@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Create and devour burgers of your choice.</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+
+  <div class="col-md-4">
+    <img src="/assets/img/burger.jpg" class="img-circle" alt="yum burgers">
+  </div>
+
+  <div class="col-md-4">
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <h2>Burgers to be devoured</h2>
+
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-status devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-6">
+
+    <h2>Burgers already devoured</h2>
+
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-status devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Create a Burger.</h2>
+    <form class="create-form">
+
+      <div class="form-group">
+        <label for="burger_name_input"><u>Name of ya burger</u></label><br>
+        <input type="text" id="burger_name_input" name="burger_name" placeholder="Put your burger here">
+      </div>
+
+
+      <button type="submit">Put Burger on the Menu</button>
+    </form>
+  </div>
+</div>

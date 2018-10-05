@@ -1,0 +1,28 @@
+.row {
+  margin-bottom: 2rem;
+}
+
+.row h1, .row h2 {
+  text-align:center;
+  margin-bottom: 2rem;
+}
+
+.create-form {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+li button.changeDevoured {
+  align-items: right;
+}
+
+.burger-text {
+  font-size: large;
+}
+
+.form-group label {
+  font-size: large;
+}
